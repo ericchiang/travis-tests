@@ -8,4 +8,6 @@ addons:
     - joshkalderimis.com
 
 script:
-  - ifconfig
+  - ip addr list
+  - cat /etc/hosts
+  - go test -v ./...
